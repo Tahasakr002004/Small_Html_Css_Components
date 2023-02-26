@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <title>02- Coursel</title>
+  <style>
+      /*
+      SPACING SYSTEM (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+      FONT SIZE SYSTEM (px)
+      10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+      */
+      /* dark color:#054c37
+        Main Color: #087f5b
+        light color:#0ca678
+        light - color: #96f2d7
+        Grey Color: #343a40
+      */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      /* ------------------------ */
+      /* GENERAL STYLES */
+      /* ------------------------ */
+      body {
+        font-family: 'Roboto', sans-serif;
+        /* color : #343a40; */
+        /* line-height: 1; */
+       display: flex;
+       justify-content: center;
+      }
+      .pagination{
+        display: flex;
+        justify-content: center;
+        margin: 200px auto;
+        gap:10px;
+      }
+      .btn{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 1px solid #087f5b;
+        background: none;
+        cursor: pointer;
+      }
+      .btn-icon{
+        height: 24px;
+        width: 24px;
+        stroke: #087f5b;
+      }
+      .links{
+        display: flex;
+        justify-content: center;
+        gap:10px;
+        margin-top: 5px;
+      }
+      .page-link{
+        text-align: center;
+        color: #333;
+        font-size:16px;
+        font-weight: 500;
+        text-decoration: none;
+      }
+      .page-link:link,
+      .page-link:visited{
+        font-size:18px;
+        width: 36px;
+        height: 36px;
+        line-height: 36px;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      .page-link:hover,
+      .page-link:active,
+      .page-link--active{
+        background-color: #087f56;
+        color:#fff;   
+      }
+      .btn:hover{
+        background-color:#087f56;
+      }
+      .btn:hover .btn-icon{
+        stroke:#fff;
+      }
+      .dots{
+        color:#868e96;
+        font-weight:500;
+        line-height: 2;
+      }
+  </style>
+  </head>
+  <body>
+    <div class="pagination">
+      <button class="btn btn-left">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="btn-icon">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+        </svg>
+      </button>
+      <div class="links">
+        <a href="#" class="page-link">1</a>
+        <a href="#" class="page-link">2</a>
+        <a href="#" class="page-link page-link--active">3</a>
+        <a href="#" class="page-link">4</a>
+        <a href="#" class="page-link">5</a>
+        <a href="#" class="page-link">6</a>
+        <span class="dots">...</span>
+        <a href="#" class="page-link">23</a>
+      </div>
+    <button class="btn btn-right">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="btn-icon">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7 .5" />
+     </svg>
+    </button>
+      </div>
+
+  </body>
+</html>
